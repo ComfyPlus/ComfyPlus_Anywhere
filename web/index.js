@@ -116,7 +116,7 @@ app.registerExtension({
                     else if(text == DISCONNECT_TEXT) {
                         let resp = await api.fetchApi("/comfyplus_anywhere/disconnect", {method: "POST", body: "{}"});
                         resp = await resp.json();
-                        this.check_status(resp);
+                        await this.check_status(resp);
                     }
                 }
             }),
