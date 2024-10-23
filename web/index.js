@@ -38,7 +38,7 @@ class ConnectDialog extends ComfyDialog {
 
     async handleSubmit() {
         const token = document.getElementById('ComfyPlus_Anywhere_Token').value.trim();
-        if(token.length <= 0) return alert("Token is required!");
+        if(token.length <= 0) return app.extensionManager.toast.add({severity: "error", summary: "Error", detail: "Token is required!", life: 3000});
 
         let resp = await api.fetchApi("/comfyplus_anywhere/connect", {
             method: "POST",
@@ -48,6 +48,7 @@ class ConnectDialog extends ComfyDialog {
         resp = await resp.json();
         if(resp.code != 0) return;
 
+        app.extensionManager.toast.add({severity: "success", summary: "Success", detail: "Success", life: 3000});
         this.hide();
 
         document.getElementById("ComfyPlus_Anywhere_Connect_Button").innerText = DISCONNECT_TEXT;
@@ -188,10 +189,10 @@ async function save_workflow() {
 
     const p = await app.graphToPrompt();
     let resp = await api.fetchApi("/comfyplus_anywhere/workflow/save", {method: "POST", body: JSON.stringify({workflow_id, content: p.workflow})});    
-    if(resp.status != 200) return app.extensionManager.toast.add({severity: "error", summary: "Error", detail: "保存失败，请稍后重试", life: 3000});
+    if(resp.status != 200) return app.extensionManager.toast.add({severity: "error", summary: "Error", detail: "Failed", life: 3000});
     
     let result = await resp.json();
     if(result.code != 0) return app.extensionManager.toast.add({severity: "error", summary: "Error", detail: result.message, life: 3000});
 
-    app.extensionManager.toast.add({severity: "success", summary: "Success", detail: "保存成功", life: 3000});
+    app.extensionManager.toast.add({severity: "success", summary: "Success", detail: "Success", life: 3000});
 }
