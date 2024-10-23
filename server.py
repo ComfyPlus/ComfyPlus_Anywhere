@@ -42,7 +42,7 @@ async def _(request):
     global frpc_worker
 
     if frpc_worker is None or not os.path.exists(STATUS_FILE):
-        return web.json_response({"code": 0, "message": "not connected"})
+        return web.json_response({"code": -1, "message": "not connected"})
 
     data = pickle.load(open(STATUS_FILE, "rb"))
     token, url = data["token"], data["url"]
@@ -59,19 +59,17 @@ async def _(request):
     if os.path.exists(STATUS_FILE):
         os.remove(STATUS_FILE)
     
-    return web.json_response({"code": 0})
+    return web.json_response({"code": 0,"data":{"url":url}})
 
 
 @server.PromptServer.instance.routes.post("/comfyplus_anywhere/status")
 async def _(request):
     if frpc_worker is None or not os.path.exists(STATUS_FILE):
         return web.json_response({"code": -1, "message": "not connected"})
-    
     data = pickle.load(open(STATUS_FILE, "rb"))
     flag, resp = await check_connection(data["url"])
     if not flag:
         return web.json_response(resp)
-    
     return web.json_response({"code": 0, "data": {"url": data["url"]}})
 
 
