@@ -47,7 +47,7 @@ class ConnectDialog extends ComfyDialog {
         });
 
         resp = await resp.json();
-        if (resp.code != 0) return;
+        if(resp.code != 0) return app.extensionManager.toast.add({severity: "error", summary: "error", detail: resp.message, life: 3000});
 
         app.extensionManager.toast.add({ severity: "success", summary: "Success", detail: "Success", life: 3000 });
         this.hide();
