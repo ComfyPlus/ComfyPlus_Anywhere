@@ -16,8 +16,8 @@ import server
 CWD = os.path.abspath(os.path.dirname(__file__))
 STATUS_FILE = os.path.join(CWD, "status.dat")
 
-# HOST = "http://127.0.0.1:5116"
-HOST = "http://152.32.218.153:8000"
+# HOST = "https://comfyplus.run"
+HOST = "http://43.134.68.113:8001"
 
 frpc_worker = None
 if sys.platform == "win32":
@@ -25,7 +25,7 @@ if sys.platform == "win32":
 elif sys.platform == "linux":
     frpc = cdll.LoadLibrary(os.path.join(CWD, "libs", "linux", "libfrpc.so"))
 elif sys.platform == "darwin":
-    frpc = cdll.LoadLibrary(os.path.join(CWD, "libs", "darwin", "libfrpc.so"))
+    frpc = cdll.LoadLibrary(os.path.join(CWD, "libs", "darwin", platform.processor(), "libfrpc.so"))
 else:
     frpc = None
 
