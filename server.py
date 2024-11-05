@@ -17,8 +17,7 @@ import server
 CWD = os.path.abspath(os.path.dirname(__file__))
 STATUS_FILE = os.path.join(CWD, "status.dat")
 
-# HOST = "https://comfyplus.run"
-HOST = "http://43.134.68.113:8001"
+HOST = "https://comfyplus.run"
 
 frpc_worker = None
 if sys.platform == "win32":
@@ -35,7 +34,7 @@ async def _(request):
     body = await request.json()
     token = body.get("token", None)
     _, resp = await start_connection(token)    
-    return web.json_response(resp)    
+    return web.json_response(resp)
 
 
 @server.PromptServer.instance.routes.post("/comfyplus_anywhere/disconnect")
