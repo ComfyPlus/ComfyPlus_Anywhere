@@ -1,39 +1,91 @@
-# ComfyPlus_Anywhere
+Get Started with **ComfyPlus Anywhere** in Just a Few Steps\!
 
-> A completely free ComfyUI intranet penetration plugin that allows you to access your home ComfyUI anytime and anywhere!
+Setting up and running **ComfyPlus Anywhere** is simple and straightforward. Follow this guide and experience seamless AI workflows like never before\!
 
-[English](./README.md) | [中文](./README_zh.md) 
+**1️⃣ Open CMD and Navigate to the Project Directory**
 
-### 1. Manual ZIP Installation
+Run this command to access the directory where you cloned **ComfyUI**:
 
-First, visit the corresponding repository address: https://github.com/ComfyPlus/ComfyPlus_Anywhere
-
-##### (1) Click the green `<>code` button on the page, then click the `Download ZIP` button in the pop-up window.
-
-![demo](images/1.jpg)
-
-##### (2) After the download is complete, unzip the compressed file.
-
-Copy the unzipped folder to the comfyui/custom_nodes plugin directory.
-
-##### (3) Restart ComfyUI and check if the plugin has been installed successfully.
-
-### 2. Git Installation: Installing using `Git` commands
-
-Using `Git` for installation requires some basic knowledge of `Git`, and you need to have `Git` installed and configured beforehand (https://git-scm.com/).
-
-##### (1) First, open the `Git` repository of the plugin to be installed: https://github.com/ComfyPlus/ComfyPlus_Anywhere
-
-1. Click the green `<>code` button on the page.
-2. Click the copy button next to the input box under the `https` option in the pop-up window.
-    ![demo](images/2.jpg)
-
-You will copy the link for the `ComfyPlus_Anywhere` plugin.
-
-##### (2) Open your `CMD` terminal, and first use the `cd` command to navigate to the folder where your ComfyUI plugins are located, such as `E://ComfyUI_windows_portable/ComfyUI/custom_nodes`.
-
-```
-cd E://ComfyUI_windows_portable/ComfyUI/custom_nodes
+```bash
+cd ComyUI
 ```
 
-##### (3) Wait for a success message. Restart ComfyUI and check if the plugin has been installed successfully.
+### **2️⃣ Install Dependencies**
+
+Ensure everything runs smoothly by installing required libraries:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+### **3️⃣ Launch the Project**
+
+Run ComfyUI with a single command:
+
+```bash
+python3 main.py
+```
+
+or 
+
+```batch
+python3 ComfyUI.py
+```
+
+**4️⃣ Explore the Documentation**
+
+Need help? The detailed instructions are right in the `README.md`. Check it out:
+
+```
+cat README.md
+```
+
+### **5️⃣ Troubleshooting Made Easy**
+
+🌟 **Permission Issues?** Add `--user` or use `sudo`:
+
+```
+pip3 install --user -r requirements.txt
+```
+
+🌟 **Prefer a Virtual Environment?** Isolate your setup:
+
+```bash
+python3 -m venv ven
+source venv/bin/activate
+pip3 install -r requirements.txt
+```
+
+🌟 **Encounter Errors?** Visit our [Issues Page](https://github.com/comfyanonymous/ComfyUI/issues) for quick solutions.
+
+### **✅ All Set and Ready to Go\!**
+
+Once installed, you can start using **ComfyPlus Anywhere** to streamline your AI workflows. Customize and configure to suit your needs\!
+
+Don’t wait—dive into the future of AI workflows now\! 🚀
+
+![](./images/image5.png)
+
+Connecting to an instance is simple:
+
+1️⃣ **Click "Connect"**  
+Begin the connection process by clicking the **"Connect"** button.![](./images/image7.png)
+
+2️⃣ **Get Your Token**
+
+* Navigate to the **ComfyPlus Dashboard**.  
+* Go to the **Instance Management** section.  
+* Find and copy the token for the desired instance.
+
+![](./images/image2.png)
+
+![](./images/image1.png)
+
+3️⃣ **Paste and Connect**
+
+* Paste the token into the input box as shown below.  
+* Click **"Connect"** to complete the process\!
+
+Enjoy seamless access to your instance and take control of your AI workflows effortlessly. 🚀
+
+![](./images/image9.png)
