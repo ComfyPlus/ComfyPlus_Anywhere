@@ -4,8 +4,6 @@
 
 *The New Application Layer for Enhanced Comfy*
 
----
-
 Empowering AI Application Anywhere  
 No Installation or GPU Required, Multi \- Modal Support and Seamless Workflow Execution 
 
@@ -66,8 +64,6 @@ Unlock the full potential of AI development with ComfyPlus – Your Ultimate Pla
 
 * **Subflow Support (Coming Soon)**  
   - Soon, ComfyPlus will support creating modular subflows, allowing you to build reusable workflow components for greater flexibility and efficiency in AI project management.
-
----
 
 ## **[ComfyPlus\_Anywhere Plugin Setup Guide](docs/setup.md)**
 
