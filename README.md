@@ -9,8 +9,6 @@
 Empowering AI Application Anywhere  
 No Installation or GPU Required, Multi \- Modal Support and Seamless Workflow Execution 
 
----
-
 [![ComfyPlus][website-shield]][website-url]
 [![Discord][discord-shield]][discord-url]
 <br>
@@ -35,15 +33,14 @@ No Installation or GPU Required, Multi \- Modal Support and Seamless Workflow Ex
 [github-downloads-link]: https://github.com/ComfyPlus/ComfyPlus_Anywhere/releases
 </div>
 
----
-
 **[Setting Up the ComfyPlus\_Anywhere Plugin](docs/setup.md)**
 
 **[Get Started with ComfyPlus\_Anywhere](docs/start.md)**
 
+**Key Features**  
+
 ---
 
-**Key Features**  
 Unlock the full potential of AI development with ComfyPlus – Your Ultimate Platform for Creating, Managing, and Running AI Workflows.
 
 * **AI** **Workflow Management**  
