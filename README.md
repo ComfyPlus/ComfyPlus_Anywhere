@@ -202,7 +202,7 @@ pip3 install -r requirements.txt
 
 [Get Started with ComfyPlus Anywhere in Just a Few Steps\!](docs/start.md)
 
-** Please ensure that the setup of ComfyPlus Anywhere has been completed according to the steps outlined above. **
+**Please ensure that the setup of ComfyPlus Anywhere has been completed according to the steps outlined above.**
 
 ---
 
