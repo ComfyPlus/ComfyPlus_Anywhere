@@ -2,8 +2,6 @@
 
 Enhance your workflow with the powerful ComfyPlus\_Anywhere plugin. This guide provides two methods for installation: the ZIP method for simplicity and the Git method for efficient updates.
 
----
-
 ### **Method 1: Installing via ZIP**
 
 **1️ Visit the Official Repository**
@@ -24,8 +22,6 @@ Enhance your workflow with the powerful ComfyPlus\_Anywhere plugin. This guide p
 * Relaunch ComfyUI to activate the plugin and enjoy its powerful features\!
 
 ![](/images/image121.png)
-
----
 
 ### **Method 2: Installing via Git**
 
@@ -63,8 +59,4 @@ git clone https://github.com/ltdrdata/ComfyPlus_Anywhere.git
 * Once the cloning is complete, restart **ComfyUI**.  
 * Verify the installation by checking the interface or plugin functionality.
 
----
-
 **Both methods are effective. Choose ZIP for simplicity or Git for ongoing updates. Enjoy the enhanced capabilities of ComfyPlus\_Anywhere\!**
-
----

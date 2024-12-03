@@ -58,8 +58,6 @@ pip3 install -r requirements.txt
 
 🌟 **Encounter Errors?** Visit our [Issues Page](https://github.com/comfyanonymous/ComfyUI/issues) for quick solutions.
 
----
-
 **\* Please ensure that the setup of ComfyPlus Anywhere has been completed according to the steps outlined above. \***
 
 **Running ComfyPlus\_Anywhere is** simple and straightforward. Follow this guide and experience seamless AI workflows like never before\!
