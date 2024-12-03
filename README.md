@@ -20,7 +20,7 @@ No Installation or GPU Required, Multi \- Modal Support and Seamless Workflow Ex
 [website-shield]: https://img.shields.io/badge/ComfyPlus-blue?style=flat
 [website-url]: https://comfyplus.run
 
-[discord-shield]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2Fcomfyorg%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&logo=discord&logoColor=white&label=Discord&color=green&suffix=%20total
+[discord-shield]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2FGhXU7sfXvE%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&logo=discord&logoColor=white&label=Discord&color=green&suffix=%20total
 [discord-url]: https://discord.com/invite/GhXU7sfXvE
 
 [github-release-shield]: https://img.shields.io/github/v/release/ComfyPlus/ComfyPlus_Anywhere?style=flat&sort=semver
