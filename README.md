@@ -1,3 +1,5 @@
+<div align="center">
+
 # **ComfyPlus**
 
 *The New Application Layer for Enhanced Comfy*
@@ -31,6 +33,7 @@ No Installation or GPU Required, Multi \- Modal Support and Seamless Workflow Ex
 [github-downloads-shield]: https://img.shields.io/github/downloads/ComfyPlus/ComfyPlus_Anywhere/total?style=flat
 [github-downloads-latest-shield]: https://img.shields.io/github/downloads/ComfyPlus/ComfyPlus_Anywhere/latest/total?style=flat&label=downloads%40latest
 [github-downloads-link]: https://github.com/ComfyPlus/ComfyPlus_Anywhere/releases
+</div>
 
 ---
 
